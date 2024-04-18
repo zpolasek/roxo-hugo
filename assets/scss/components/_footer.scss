@@ -1,79 +1,82 @@
-.site-footer{
+.site-footer {
   background: $dark-gray;
   padding: 100px 0;
-  &-logo{
+  &-logo {
     margin-bottom: 50px;
-    @include mobile{
+    @include mobile {
       text-align: center;
+    }
+    img {
+      max-width: 300px; /* Restricting the logo width to 300px */
     }
   }
-  &-widget{
-    @include desktop{
+  &-widget {
+    @include desktop {
       margin-bottom: 40px;
     }
-    @include mobile{
+    @include mobile {
       text-align: center;
     }
-    &-title{
+    &-title {
       color: $white;
       margin-bottom: 30px;
-      @include desktop{
+      @include desktop {
         margin-bottom: 20px;
       }
     }
-    &-description{
+    &-description {
       color: $white;
       line-height: 30px;
-      a{
+      a {
         color: $white;
       }
     }
-    &-links{
+    &-links {
       margin: 0;
       padding: 0;
-      li{
+      li {
         list-style: none;
-        a{
+        a {
           color: $white;
           transition: all 0.3s $site-ease;
           display: block;
         }
-        &:not(:last-child){
-          a{
+        &:not(:last-child) {
+          a {
             padding-bottom: 9px;
           }
         }
       }
     }
-    &-top{
-      @include mobile{
+    &-top {
+      @include mobile {
         text-align: center;
         display: block;
       }
-      img{
+      img {
         margin-bottom: 20px;
       }
-      p{
+      p {
         color: $white;
       }
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }
   }
-  &-copyright{
-    p{
+  &-copyright {
+    p {
       color: $white;
       margin: 50px auto 0;
       text-align: center;
     }
-    a{
+    a {
       color: $text-color-dark;
       transition: all .3s ease;
-      @include tablet{
+      @include tablet {
         font-size: 20px;
       }
-      @include desktop{
+      @include desktop {
         margin-bottom: 70px;
       }
     }
